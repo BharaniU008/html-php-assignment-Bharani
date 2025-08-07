@@ -28,8 +28,109 @@ OUTPUT:
 2	2.00	1.00	0.67	
 3	3.00	1.50	1.00	
 
+4. Predict the output of the following snippet:
+$animal = “antelope”; $animal_heads = 1; $animal_legs = 4;
+echo“The $animal has $animal_heads head(s).”;
+echo“The $animal has $animal_legs leg(s).”;
+SOL
+
+<?php
+$animal = "antelope";
+$animal_heads = 1;
+$animal_legs = 4;
+
+echo "The $animal has $animal_heads head(s).";
+echo "The $animal has $animal_legs leg(s).";
+?>
+OUTPUT:
+The antelope has 1 head(s).The antelope has 4 leg(s).
+
 3. Imagine you are building a personal portfolio website. Design a web page layout that 
 includes a header, a navigation menu, a main content area for displaying your projects 
 and a footer. Explain how you would structure the HTML code and apply CSS styles to 
 achieve the desired layout and visual design.
 SOL
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background: #444;
+      text-align: center;
+      padding: 0.5em;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 1em;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>harsini</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I love building websites and learning new things.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <p>Project 1: Personal Website</p>
+      <p>Project 2: To-do App</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: harsini.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 harsini</p>
+  </footer>
+
+</body>
+</html>
